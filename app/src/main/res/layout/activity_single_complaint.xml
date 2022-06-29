@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/titleComplaint"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/title"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/statusComplaint"
+            android:layout_width="167dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/titleComplaint"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/status"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/statusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleComplaint"
+            android:layout_marginStart="228dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/change_status"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="106dp" />
+
+        <TextView
+            android:id="@+id/descriptionComplaint"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statusComplaint"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/addressComplaint"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionComplaint"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/address" />
+
+        <TextView
+            android:id="@+id/creationDateComplaint"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressComplaint"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/creation_date" />
+
+        <TextView
+            android:id="@+id/institutionNameComplaint"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/creationDateComplaint"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/institution_name" />
+
+
+        <Button
+            android:id="@+id/institutionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/institutionNameComplaint"
+            android:layout_marginTop="25dp"
+            android:text="@string/change_institution"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:backgroundTint="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageComplaint"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/institutionButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/displayOnMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            app:backgroundTint="@color/white"
+            app:srcCompat="@android:drawable/ic_dialog_map" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

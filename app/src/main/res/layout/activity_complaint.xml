@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ComplaintActivity">
+
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Complaint"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTitlu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/text_view_id"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_background"
+            android:hint="Complaint title"
+            android:maxLength="30"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/editDescriere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTitlu"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_background"
+            android:hint="Complaint description"
+            android:minHeight="50dp"
+            android:paddingLeft="15dp"
+           />
+
+        <Spinner
+            android:id="@+id/static_spinner"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editDescriere"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <Button
+            android:id="@+id/cameraBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/static_spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="Take a photo"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/black" />
+
+        <ImageView
+            android:id="@+id/myImage"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/cameraBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            app:roundAsCircle="true"
+            app:roundingBorderColor="@color/black"
+            app:roundingBorderWidth="2dp" />
+
+
+
+<!--        <Button-->
+<!--            android:id="@+id/getLocation"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/myImage"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="Get location"-->
+<!--            android:textColor="@color/white"-->
+<!--            app:backgroundTint="@color/black"/>-->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myImage"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Your Current GPS Location: Loading..."
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:padding="15dp"
+            android:text="Create Complaint"
+            app:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+</ScrollView>

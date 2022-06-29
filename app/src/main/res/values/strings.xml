@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Civic Guard</string>
+    <string name="my_complaints">My Complaints</string>
+    <string name="all_complaints">All complaints</string>
+    <string name="change_institution">Change Institution</string>
+    <string name="institution_name">Institution Name</string>
+    <string name="creation_date">Creation Date</string>
+    <string name="change_status">Change status</string>
+    <string name="address">Address</string>
+    <string name="description">Description</string>
+    <string name="status">Status</string>
+    <string name="title">Title</string>
+    <string-array name="institution_array">
+        <item>FirmaApaCanalizare</item>
+        <item>FirmaGunoi</item>
+        <item>FirmaTransportPublic</item>
+        <item>FirmaAdministrareDrumuri</item>
+        <item>Primarie</item>
+    </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="status_change">Status Change</string>
+    <string name="notDescription">Description</string>
+</resources>
